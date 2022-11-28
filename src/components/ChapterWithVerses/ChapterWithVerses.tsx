@@ -29,7 +29,14 @@ export default function ChapterWithVerses() {
 
   return (
     <Container>
-      <Row style={{ display: "flex", alignItems: "center" }}>
+      <Row
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginLeft: "5px",
+          marginRight: "5px",
+        }}
+      >
         <Col
           style={{ display: "flex", justifyContent: "flex-start", padding: 0 }}
         >
@@ -46,7 +53,13 @@ export default function ChapterWithVerses() {
         </Col>
       </Row>
       {capitulos?.verses.map((versiculo: Verses) => (
-        <Row style={{ marginBottom: "10px" }}>
+        <Row
+          style={{
+            marginBottom: "10px",
+            marginLeft: "5px",
+            marginRight: "5px",
+          }}
+        >
           <Card style={{ width: "100%" }} border="dark">
             <ListGroup variant="flush">
               <ListGroup.Item>
