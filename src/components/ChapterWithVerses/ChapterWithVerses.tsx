@@ -52,13 +52,14 @@ export default function ChapterWithVerses() {
           </Button>
         </Col>
       </Row>
-      {capitulos?.verses.map((versiculo: Verses) => (
+      {capitulos?.verses.map((versiculo: Verses, index: number) => (
         <Row
           style={{
             marginBottom: "10px",
             marginLeft: "5px",
             marginRight: "5px",
           }}
+          key={index}
         >
           <Card style={{ width: "100%" }} border="dark">
             <ListGroup variant="flush">
